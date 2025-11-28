@@ -15,23 +15,29 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Main font */
-    line-height: 1.6;       /* Space between lines of text */
-    color: #242424;         /* Secondary color for text */
-    background: linear-gradient(to bottom, #dde8e3 0%, #c8d9d1 100%); /* Primary foreground gradient background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    line-height: 1.6;       
+    color: #242424;
+
+    /* NEW Modern Clean Background */
+    background: linear-gradient(160deg, #f7f9fa 0%, #e5ebee 50%, #d7dfe4 100%);
+    background-attachment: fixed; /* Smooth parallax effect */
 }
+
+
 
 /* ============================================== */
 /* NAVIGATION BAR - Sticky header at the top     */
 /* ============================================== */
-nav {
-    background: linear-gradient(135deg, #242424 0%, #1a1a1a 100%); /* Secondary dark gradient background */
-    padding: 1.2rem 0;         /* Top and bottom spacing */
-    position: sticky;          /* Stays at top when scrolling */
-    top: 0;                    /* Position at very top */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
-    z-index: 100;              /* Keeps nav above other content */
+nav a:hover {
+    color: #006239;            /* Primary green */
+    background-color: #fafafa; /* Light background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 98, 57, 0.7); /* Green glow */
+    transition: all 0.3s ease;
 }
+
 
 .nav-content {
     max-width: 1200px;         /* Maximum width of content */
@@ -72,14 +78,20 @@ nav a:hover {
 /* SECTIONS - General styling for all sections   */
 /* ============================================== */
 section {
-    max-width: 1200px;         /* Maximum width */
-    margin: 0 auto;            /* Centers the section */
-    padding: 80px 40px;        /* Top/bottom and left/right spacing */
-    background-color: #fafafa; /* Secondary foreground (light background) */
-    border-radius: 20px;       /* Rounded corners */
-    margin-bottom: 30px;       /* Space between sections */
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12); /* Depth shadow */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 40px;
+
+    /* NEW Background (Soft Glass Effect) */
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
 }
+
+
 
 section h2 {
     font-size: 2.5rem;         /* Large heading size */
@@ -108,18 +120,20 @@ section h2::after {
 /* HERO SECTION - The big welcome area           */
 /* ============================================== */
 .hero {
-    text-align: center;        /* Centers all text */
-    padding: 120px 20px;       /* Large top/bottom spacing */
-    background: linear-gradient(135deg, #006239 0%, #004d2d 100%); /* Primary green gradient */
-    /* To use an image instead, uncomment below and replace 'your-image.jpg' with your image path: */
-    /* background-image: url('your-image.jpg'); */
-    /* background-size: cover; */
-    /* background-position: center; */
-    color: #fafafa;            /* Secondary foreground (light text) */
-    box-shadow: 0 15px 50px rgba(0, 98, 57, 0.4); /* Green glow */
-    border-radius: 20px;       /* Rounded corners */
-    margin-bottom: 30px;       /* Space below hero */
+    text-align: center;
+    padding: 120px 20px;
+
+    /* Refined gradient for a modern premium feel */
+    background: linear-gradient(135deg, #008554 0%, #006b43 60%, #005333 100%);
+
+    color: #fafafa;
+    box-shadow: 0 15px 50px rgba(0, 98, 57, 0.45);
+    border-radius: 20px;
+    margin-bottom: 30px;
 }
+
+
+
 
 .hero h1 {
     font-size: 3.5rem;         /* Very large name text */
@@ -148,14 +162,15 @@ section h2::after {
     font-size: 1.1rem;         /* Slightly larger text */
     transition: all 0.3s ease; /* Smooth transition */
     margin: 5px;               /* Small gap between buttons */
-    box-shadow: 0 5px 20px rgba(36, 36, 36, 0.4); /* Dark shadow */
+    box-shadow: 0 5px 20px rgba(97, 84, 84, 0.4); /* Dark shadow */
 }
 
 .btn:hover {
-    transform: translateY(-3px) scale(1.05); /* Moves up and scales slightly */
-    box-shadow: 0 15px 35px rgba(0, 98, 57, 0.5); /* Green glow on hover */
-    background-color: #006239; /* Primary green on hover */
+    transform: translateY(-3px) scale(1.05);
+    background-color: #006239; /* Primary green */
+    box-shadow: 0 0 25px rgba(0, 98, 57, 0.8), 0 10px 30px rgba(21, 134, 205, 0.5); /* Glow */
 }
+
 
 .btn-secondary {
     background-color: transparent; /* Transparent background */
